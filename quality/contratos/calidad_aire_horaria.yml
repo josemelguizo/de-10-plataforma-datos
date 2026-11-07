@@ -1,0 +1,27 @@
+# Contrato de ejemplo. Un contrato es un acuerdo escrito entre quien produce
+# un dataset y quien lo usa: qué columnas trae, de qué tipo y qué valores
+# son válidos. Si los datos no lo cumplen, el pipeline se detiene ANTES de
+# que lleguen al dashboard.
+dataset: calidad_aire_horaria
+descripcion: Promedio horario de PM2.5 por estación de monitoreo.
+responsable: tu-nombre
+primary_key: [estacion_id, fecha_hora]
+min_filas: 1
+permitir_columnas_extra: false
+
+columnas:
+  - nombre: estacion_id
+    tipo: string
+    requerida: true
+  - nombre: fecha_hora
+    tipo: datetime
+    requerida: true
+  - nombre: pm25
+    tipo: float
+    requerida: false
+    min: 0
+    max: 1000
+  - nombre: estado
+    tipo: string
+    requerida: true
+    valores_permitidos: [valido, sospechoso, faltante]

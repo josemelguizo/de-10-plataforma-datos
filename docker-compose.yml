@@ -1,0 +1,23 @@
+# Punto de partida: base de datos + herramienta de BI. Agrega aquí lo que tu
+# arquitectura necesite (Airflow, MinIO, Redpanda...) a medida que avances.
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: plataforma
+      POSTGRES_PASSWORD: plataforma
+      POSTGRES_DB: plataforma
+    ports:
+      - "5436:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  metabase:
+    image: metabase/metabase:latest
+    ports:
+      - "3000:3000"
+    depends_on:
+      - postgres
+
+volumes:
+  pgdata:
