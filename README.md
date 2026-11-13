@@ -10,13 +10,15 @@ Parte de mi [ruta de ingeniería de datos](https://github.com/josemelguizo/ruta-
 
 Construye una plataforma que responda una pregunta real sobre Antioquia con datos abiertos, desde la ingesta hasta un dashboard, con calidad, orquestación, infraestructura como código y CI/CD.
 
+> **Hay un ejemplo resuelto:** [de-10-ejemplo-lluvia-accidentes](https://github.com/josemelguizo/de-10-ejemplo-lluvia-accidentes) hace la tercera pregunta (lluvia y accidentes en Medellín) de punta a punta, con todas las piezas de abajo. Úsalo de modelo para la estructura, las decisiones y la documentación, pero **elige otra pregunta** para tu proyecto, así lo construyes tú.
+
 Elige **una** pregunta (o propón la tuya):
 
 | Pregunta | Fuentes posibles |
 |---|---|
 | ¿Cómo se relacionan la calidad del aire y el clima en el Valle de Aburrá? | Redes de monitoreo de calidad del aire en [datos.gov.co](https://www.datos.gov.co/) o [SIATA](https://siata.gov.co/), clima de Open-Meteo (proyecto 4) |
 | ¿Cómo afecta la TRM a los precios de los combustibles en Antioquia? | TRM (proyecto 3), precios de combustibles en datos.gov.co |
-| ¿Dónde y cuándo ocurren más incidentes de tránsito en Medellín? | Incidentes viales en el portal de datos abiertos de Medellín, clima de Open-Meteo |
+| ~~¿Dónde y cuándo ocurren más incidentes de tránsito en Medellín?~~ Ya resuelta en el ejemplo | Incidentes viales en el portal de datos abiertos de Medellín, clima de Open-Meteo |
 
 Antes de escribir código, verifica que tus fuentes existen, se actualizan y tienen suficiente historia. Ese chequeo es el hito 0.
 
